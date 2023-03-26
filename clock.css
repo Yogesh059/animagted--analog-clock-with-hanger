@@ -138,17 +138,28 @@ body {
       margin-bottom: 200px;
     }
   }
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: rgb(204, 25, 153);
-    }
+  @media only screen and (max-width: 1200px ) {
     .hanger img{
-        margin-left: 90px;
+        margin-left: 575px;
     }
   }
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 1024px) {
     .hanger img{
-        margin-left: 386px;
+        margin-left: 484px;
     }
   }
-
+  @media only screen and (max-width: 768px) {
+    .hanger img{
+        margin-left: 360px;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .hanger img{
+        margin-left: 214px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .hanger img{
+        margin-left: 134px;
+    }
+  }
