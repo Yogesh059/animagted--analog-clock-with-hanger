@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #beb1b1;
+  /* margin: auto; */
+}
+
+.clock {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gpIm6b_Yt53Hsa5HwnOc2YIToDYPlR0l1Lx8EPdHmER2qDziqL8W5veWwRCXxI0_T0g&usqp=CAU);
+  background-size: cover;
+  border: 4px solid #6c6a6a;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 200px;
+  animation-name: clock-animate;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: initial;
+  /* animation-direction: reverse; */
+}
+
+
+.clock:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #3d3d3d;
+  border-radius: 50%;
+  z-index: 999;
+}
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+.clock,
+.hour,
+.hr {
+  width: 160px;
+  height: 160px;
+}
+.clock,
+.min,
+.mn {
+  width: 1px;
+  height: 190px;
+}
+
+.clock,
+.sec,
+.sc {
+  width: 230px;
+  height: 230px;
+}
+.hr,
+.min,
+.sc {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+.hr:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background: #0e0d0a;
+  z-index: 9;
+  border-radius: 6px 6px 0 0;
+}
+.mn:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background: #020202;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+.sc:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background: #100101;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+.hanger img {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-left: 736px;
+  margin-top: -43px;
+  overflow: hidden;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: initial;
+}
+.hanger {
+}
+@keyframes example {
+  0% {
+    margin-top: -271px;
+  }
+  /* 50% {
+    margin-top: -20px;
+  } */
+  100% {
+    margin-top: -43px;
+  }
+}
+@keyframes clock-animate {
+    0% {
+      margin-top: 0px;
+      /* display: none; */
+    }
+    /* 50% {
+      margin-top: 50%;
+    } */
+  
+    100% {
+      margin-bottom: 200px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(204, 25, 153);
+    }
+    .hanger img{
+        margin-left: 90px;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .hanger img{
+        margin-left: 386px;
+    }
+  }
+
