@@ -158,14 +158,14 @@ body {
         margin-left: 214px;
     }
   }
+  
+  @media only screen and (max-width: 414px) {
+    .hanger img{
+        margin-left: 183px;
+    }
+  }
   @media only screen and (max-width: 320px) {
     .hanger img{
         margin-left: 134px;
-    }
-  }
-  
-  @media only screen and (max-width: 318px) {
-    .hanger img{
-        margin-left: 124px;
     }
   }
